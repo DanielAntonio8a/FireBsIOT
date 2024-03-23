@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" style="justify-content: center; background-color: rgb(235, 180, 78);">HOME</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="house"><br>
+    <div class="floor">
+      <div class="room living-room">
+        <h2 class="room-title">Habitación</h2><br>
+        <div class="lamp" [class.on]="habitaciones[0].luz"></div>
+      </div><br>
+      <div class="room kitchen">
+        <h2 class="room-title">Sala de estar</h2><br>
+        <div class="lamp" [class.on]="habitaciones[1].luz"></div>
+      </div>
+    </div><br>
+    <div class="floor">
+      <div class="room bedroom">
+        <h2 class="room-title">Cocina</h2><br>
+        <div class="lamp" [class.on]="habitaciones[2].luz"></div>
+      </div><br>
+      <div class="room bathroom">
+        <h2 class="room-title">Comedor</h2><br>
+        <div class="lamp" [class.on]="habitaciones[3].luz"></div>
+      </div>
+    </div><br>
+    <div class="floor">
+      <div class="room study">
+        <h2 class="room-title">Estudio</h2><br>
+        <div class="lamp" [class.on]="habitaciones[4].luz"></div>
+      </div><br>
+      <div class="room study">
+        <h2 class="room-title">Cochera</h2><br>
+        <div class="lamp" [class.on]="habitaciones[5].luz"></div>
+      </div>
+    </div><br>
+    <div class="door">
+      <h2 class="door-title">Puerta</h2><br>
+    </div>
+  </div>
+</ion-content>

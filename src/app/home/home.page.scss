@@ -1,0 +1,88 @@
+
+.house {
+  display: grid;
+  grid-template-rows: repeat(3, 10fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  height: 100%;
+  width: 100%;
+  background-color: #616060;
+  // overflow: ;
+  position: relative;
+  }
+
+.floor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #616060;
+  border-radius: 20px; 
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+  background-color: #848282;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(243, 243, 243);
+}
+
+.room-title {
+  margin: 10px;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.lamp {
+  width: 20px;
+  height: 40px;
+  background-color: #3e3b3b;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px);
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.587);
+}
+
+.lamp.on {
+  background-color: #ffc107;
+  animation: lamp-animation 1s infinite;
+  box-shadow: 0px 0px 10px rgb(65, 255, 12);
+}
+
+@keyframes lamp-animation {
+  100% {
+    width: 20px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    transform: rotate(0deg);
+   }
+  50% {
+    width: 20px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+.door {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.door-title {
+  margin-right: -225%;
+  margin-top: 100px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #654321;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 158, 12, 0.587);
+}
